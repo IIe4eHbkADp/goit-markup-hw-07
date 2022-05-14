@@ -28,33 +28,33 @@
       <div class="container">
         <!-- Navigation -->
         <div class="wrapper">
-          <a class="header-logo" href="./index.html">Web<span class="logo">Studio</span></a>
-          <nav class="header-navigation">
-            <ul class="header-list nav">
-              <li class="header-item">
-                <a class="header-link current" href="./index.html">Студия</a>
+          <a class="logo" href="./index.html">Web<span class="logo__header">Studio</span></a>
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="navigation__link current" href="./index.html">Студия</a>
               </li>
-              <li class="header-item">
-                <a class="header-link" href="./portfolio.html">Портфолио</a>
+              <li class="navigation__item">
+                <a class="navigation__link" href="./portfolio.html">Портфолио</a>
               </li>
-              <li class="header-item">
-                <a class="header-link" href="">Контакты</a>
+              <li class="navigation__item">
+                <a class="navigation__link" href="">Контакты</a>
               </li>
             </ul>
           </nav>
           <!-- Contacts -->
-          <ul class="header-contacts">
-            <li class="header-item contact">
-              <a class="contacts-item" href="mailto:info@devstudio.com">
-                <svg class="contacts-email">
+          <ul class="contacts">
+            <li class="contacts__item">
+              <a class="contacts__link" href="mailto:info@devstudio.com">
+                <svg class="contacts__icon" width="16" height="12">
                   <use href="./images/icon.svg#icon-email"></use>
                 </svg>
                 info@devstudio.com</a
               >
             </li>
-            <li class="header-item contact">
-              <a class="contacts-item" href="tel:+380961111111"
-                ><svg class="contacts-phone">
+            <li class="contacts__item">
+              <a class="contacts__link" href="tel:+380961111111"
+                ><svg class="contacts__icon" width="10" height="16">
                   <use href="./images/icon.svg#icon-phone"></use></svg
                 >+38 096 111 11 11</a
               >
@@ -65,19 +65,21 @@
     </header>
     <main>
       <!-- Hero -->
-      <section class="main-hero">
+      <section class="hero">
         <div class="container">
-          <h1 class="hero-title">
+          <h1 class="hero__title">
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
           <!-- button -->
 
-          <button class="hero-button button" type="button" data-modal-open>Заказать услугу</button>
+          <button class="button button--transition" type="button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
-      <section class="main-section section list">
-        <h2 class="hidden-title">Наше преимущество</h2>
+      <section class="main-section section">
+        <h2 class=".visually-hidden">Наше преимущество</h2>
         <div class="container">
           <ul class="section-content">
             <li class="item">
@@ -371,8 +373,8 @@
       <div class="container">
         <div class="footer-section">
           <div>
-            <a class="header-logo item" href="./index.html"
-              >Web<span class="footer-logo">Studio</span></a
+            <a class="logo logo--margin" href="./index.html"
+              >Web<span class="logo__footer">Studio</span></a
             >
 
             <address>
@@ -425,7 +427,7 @@
               <h2 class="section-title social-footer">Подпишитесь на рассылку</h2>
               <div class="footer-subscribe">
                 <input class="email" type="email" name="mail" placeholder="Email" />
-                <button class="hero-button button submit" type="submit">
+                <button class="button button--transition button--footer" type="submit">
                   Подписаться
                   <svg class="telegram" width="24" height="24">
                     <use href="./images/icon.svg#icon-telegram"></use>
@@ -501,7 +503,9 @@
             </label>
 
             <div class="submit-wrap">
-              <button type="submit" class="modal-submit hero-button button">Отправить</button>
+              <button type="submit" class="button button--transition button--modal">
+                Отправить
+              </button>
             </div>
           </div>
         </form>
