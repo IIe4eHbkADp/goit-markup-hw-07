@@ -15,7 +15,7 @@
         "../sass/components/_services.scss",
         "../sass/components/_client.scss",
         "../sass/components/_team.scss",
-        "../sass/components/_social.scss",
+        "../sass/components/_social-link.scss",
         "../sass/components/_filter-btn.scss",
         "../sass/components/_product-card.scss",
         "../sass/layout/_modal.scss",
