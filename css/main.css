@@ -379,13 +379,13 @@ section {
   margin-bottom: 16px;
 }
 
-.social-block__item:not(:last-child) {
-  margin-right: 10px;
-}
-
 .social-block {
   display: flex;
   justify-content: center;
+}
+
+.social-block__item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social-block__link {
