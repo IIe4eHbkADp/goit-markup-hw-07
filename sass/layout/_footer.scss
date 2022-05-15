@@ -31,13 +31,6 @@
   letter-spacing: 0.03em;
 }
 
-.section-title.footer-social {
-  color: var(--main-color);
-}
-.footer-social .social-item:not(:last-child) {
-  margin-right: 10px;
-}
-
 .social-section {
   padding-top: 12px;
   margin-left: 70px;
@@ -49,7 +42,7 @@
   margin-bottom: 20px;
   color: var(--main-color);
 }
-.social-link.footer-social {
+.social-block__link--size {
   width: 44px;
   height: 44px;
 
@@ -57,17 +50,20 @@
   justify-content: center;
 
   background-color: var(--svg-bg-footer);
+  color: var(--main-color);
 
   border-radius: 50%;
   fill: currentColor;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    background-color: var(--accent-text-color);
+  }
 }
-.social-list .social-link:focus,
-.social-link:hover {
-  background-color: var(--accent-text-color);
-}
+
 .social.links {
   color: var(--main-color);
 }

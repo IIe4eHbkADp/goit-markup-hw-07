@@ -1,5 +1,15 @@
 @import './base/_reset';
+@import './utils/placeholder';
 @import './utils/_vars';
+@import './base/common';
 @import './layout/_header';
+@import './layout/_navigation';
+@import './components/contact';
 @import './components/_hero';
+@import './components/advantage';
+@import './components/client';
+@import './components/team';
+@import './components/fillter-btn';
+@import './components/product-card';
+@import './layout/modal';
 @import './layout/_footer';
