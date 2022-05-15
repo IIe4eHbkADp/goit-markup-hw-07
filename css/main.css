@@ -24,13 +24,13 @@ img {
   max-width: 100%;
 }
 
-.advantage__wrap, .services__title, .client, .icon-client, .social-block__link, .modal-close, .icon-wrap, .submit-wrap {
+.advantage__wrap, .services__title, .company__list, .company__link, .social-block__link, .modal-close, .icon-wrap, .submit-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.navigation__link, .contacts__link, .button--active, .icon-client, .social-block__link, .button-filter, .modal-close, .social-block__link--size {
+.navigation__link, .contacts__link, .button--active, .company__link, .social-block__link, .button-filter, .modal-close, .social-block__link--size {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -311,19 +311,19 @@ section {
   padding: 94px 0;
 }
 
-.client {
+.company__list {
   margin-top: 50px;
 }
 
-.client-list {
+.company__item {
   width: calc(100% / 6 - 30px);
 }
 
-.client-list:not(:last-child) {
+.company__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.icon-client {
+.company__link {
   color: var(--svg-main-color);
   fill: currentColor;
   transition-property: color;
@@ -332,39 +332,38 @@ section {
   height: 92px;
 }
 
-.icon-client:focus, .icon-client:hover {
+.company__link:focus, .company__link:hover {
   color: var(--accent-text-color);
 }
 
-.clients-item {
+.company__icon {
   background-position: center;
   width: 106px;
   height: 60px;
-}
-
-.team-list {
-  display: flex;
-  margin-top: 50px;
 }
 
 .team {
   background-color: var(--color-section);
 }
 
-.item-cards {
+.team__list {
+  display: flex;
+  margin-top: 50px;
+}
+
+.team__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team__wrap {
   padding: 30px 0;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--main-color);
 }
 
-.team-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.team-title {
+.team__title {
   margin-bottom: 10px;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -373,7 +372,7 @@ section {
   color: var(--secondary-text-color);
 }
 
-.profession {
+.team__profession {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
