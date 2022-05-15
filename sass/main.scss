@@ -1,11 +1,11 @@
-@import './base/_reset';
+@import './base/reset';
 @import './utils/placeholder';
-@import './utils/_vars';
+@import './utils/vars';
 @import './base/common';
-@import './layout/_header';
-@import './layout/_navigation';
+@import './layout/header';
+@import './layout/navigation';
 @import './components/contact';
-@import './components/_hero';
+@import './components/hero';
 @import './components/advantage';
 @import './components/services';
 @import './components/client';
@@ -14,4 +14,4 @@
 @import './components/filter-btn';
 @import './components/product-card';
 @import './layout/modal';
-@import './layout/_footer';
+@import './layout/footer';
