@@ -24,13 +24,13 @@ img {
   max-width: 100%;
 }
 
-.client, .icon-client, .social-block__link, .modal-close, .icon-wrap, .submit-wrap {
+.bg-img, .section-image .section-title, .client, .icon-client, .social-block__link, .modal-close, .icon-wrap, .submit-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.contacts__link, .button--active, .icon-client, .social-block__link, .modal-close {
+.contacts__link, .button--active, .icon-client, .social-block__link, .button-filter, .modal-close {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -257,9 +257,6 @@ section {
   background-color: var(--color-section);
   border-radius: 4px;
   margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .section-content {
@@ -276,6 +273,11 @@ section {
 
 .section-image {
   display: flex;
+  margin-top: 50px;
+}
+
+.section-image .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .section-item {
@@ -289,9 +291,6 @@ section {
 }
 
 .section-image .section-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: var(--main-color);
 }
 
@@ -306,14 +305,6 @@ section {
   height: 70px;
   width: 100%;
   background: rgba(47, 48, 58, 0.8);
-}
-
-.section-image .item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.section .section-image {
-  margin-top: 50px;
 }
 
 .company {
@@ -362,7 +353,7 @@ section {
 }
 
 .item-cards {
-  padding-top: 30px 0;
+  padding: 30px 0;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--main-color);
@@ -420,6 +411,12 @@ section {
   margin-bottom: 50px;
 }
 
+.section-filter .current {
+  color: var(--main-color);
+  background-color: var(--accent-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 .section-filter .item:not(:last-child) {
   margin-right: 8px;
 }
@@ -440,18 +437,9 @@ section {
 
 .button-filter {
   transition-property: background-color, color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.section-filter .current {
-  color: var(--main-color);
-  background-color: var(--accent-text-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.filter.button-filter:hover,
-.button-filter:focus {
+.button-filter:hover, .button-filter:focus {
   color: var(--main-color);
   background-color: var(--accent-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
